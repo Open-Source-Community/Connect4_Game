@@ -14,8 +14,9 @@ class Welcome extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.orange,
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: Colors.deepOrange,
-        title: Center(child: Text("Connect 4 ",style: TextStyle(color: Colors.black),)),
+        title: Text("Connect 4 ",style: TextStyle(color: Colors.black),),
       ),
       body: Container(
         width: double.infinity,
@@ -32,7 +33,7 @@ class Welcome extends StatelessWidget {
               ['w','w','w','w','w','w','w'],
               ['w','w','w','w','w','w','w']
             ] ;
-              checkk=start_coin;
+               checkk=start_coin;
               print("started_con ${start_coin}");
 
               Navigator.push(context, MaterialPageRoute(builder: (context){

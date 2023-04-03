@@ -16,7 +16,7 @@ class Started_coin extends StatelessWidget {
       backgroundColor: Colors.orange,
       appBar: AppBar(
         backgroundColor: Colors.deepOrange,
-        title: Center(child: Text("Connect 4 ",style: TextStyle(color: Colors.black),)),
+        title: const Center(child: Text("Connect 4 ",style: TextStyle(color: Colors.black),)),
       ),
 
       body: Center(
@@ -25,19 +25,19 @@ class Started_coin extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Which coin will start!!! ",style: TextStyle(fontSize: 25),),
-              SizedBox(height: 20,),
+              const Text("Which coin will start!!! ",style: TextStyle(fontSize: 25),),
+              const SizedBox(height: 20,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   InkWell(onTap: (){
                     start_coin=true;
                     Navigator.pop(context);
-                  },child: Container(child: Padding(
+                  },child:  Container(child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Cell(col: 'o'),
                   ))),
-                SizedBox(
+                const SizedBox(
                   width:20,
 
     ),
@@ -46,7 +46,7 @@ class Started_coin extends StatelessWidget {
                     Navigator.pop(context);
                   },child: Container(child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Cell(col: ''),
+                    child: Cell(col: 'b'),
                   )))            ],
               ),
             ],

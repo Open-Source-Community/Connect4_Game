@@ -35,9 +35,7 @@ class Connect4Screen extends StatelessWidget {
 
 
       ),
-      body:
-
-       Board()
+      body: Board(),
 
     );
   }
